@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="@color/teal_700">
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="322dp"
+        android:layout_height="54dp"
+        android:text=" სარეგისტრაციო ფორმა"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.599" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="333dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="36dp"
+        android:hint="იმეილი"
+        android:text=""
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="337dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="340dp"
+        android:hint="პაროლი"
+        android:text=""
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Enter"
+        android:layout_width="191dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="100dp"
+        android:text="შეყვანა"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/Agreement"
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:buttonTint="#3FBA44"
+        android:text="ვეთანხმები წესებსა და პირობებს"
+        app:layout_constraintBottom_toTopOf="@+id/Enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.706" />
+</androidx.constraintlayout.widget.ConstraintLayout>
